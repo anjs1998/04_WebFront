@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>웰컴 투 더 회원 가입</h1>
+
+    <fieldset>
+        <legend>필수 입력 정보</legend><br><br>
+
+
+        <table>
+            <tr>
+                <th><b>ID</b></th>
+                
+                <td ><input type = "text"  placeholder="아이디 10글자 이내"></td>
+                <td><button>중복 확인</button></td>
+            </tr>
+            <tr>
+                <th><b>비밀번호</b></th>
+                <td ><input type="password"  placeholder = "영문, 숫자, 특수문자 포함 8자 이상"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th><b>비밀번호 확인</b></th>
+                <td ><input type="password"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th><b>Email</b></th>
+                <td><input type="text">
+                <td>
+                    <select>
+                        <option>직접입력</option>
+                        <option>naver.com</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        
+        
+    </fieldset>
+
+
+    <fieldset>
+        <legend>추가 정보</legend>
+        프로필 사진 <button>파일 선택</button> 선택된 파일 없음<br><br>
+        성별 : <label><input type="radio" name = gender> 남자</label><label><input type="radio" name = gender> 여자</label><br><br>
+        생년월일 : <input type = "datetime-local"><br><br>
+
+        취미 <br><br>
+        <label><input type = "checkbox"> 야구 </label> <label><input type = "checkbox"> 농구 </label> <label><input type = "checkbox"> 축구 </label><br><br>
+        <label><input type = "checkbox"> 공부 </label><label><input type = "checkbox"> 음악감상 </label><br><br>
+        <label><input type = "checkbox"> 기타<input type = "text"> </label><br><br>
+        <label>자기소개<br><input type = "textarea" width = "500" height = "500"></label><br><br>
+    </fieldset>
+</body>
+</html>
