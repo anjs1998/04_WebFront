@@ -1,0 +1,165 @@
+*{
+
+    box-sizing: border-box;
+
+    border:1px solid black;
+    
+    /*작성할때는 페이지 요소를 원할히 알아보기 위해 써놓고
+    개발이 끝낫을때 주석처리*/
+}
+
+body{
+
+    margin:0;
+
+
+}
+
+main{
+
+    width:1140px;
+    margin: auto;
+}
+
+#header{
+    width:100%;
+    display:flex;
+    
+}
+
+#menu-button{
+    width:32px;
+    height:28px;/* menu_button의 가로세로 픽셀크기에 딱 맞춤*/
+    margin: 8px 0px 0px 0px;
+   /* display:flex;
+    align-items: center;*/
+    
+}
+#menu-button>img{
+    width:100%;
+    height:100%;
+    
+}
+#mainpage{}
+#mainpage>img{
+    padding:5px;
+}
+
+.search-box{
+
+    display:flex;
+    align-items:center;
+    
+    width: 300px;
+    padding : 0px 3px ;
+    
+    border:2px solid #ccc;
+    border-radius: 25px;
+
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.search-box input {
+    /*flex: grow;*/
+    
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 5px;
+    
+}
+.search-box .icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 40%;
+    /*height: 20px;*/
+    height:100%;
+   /* background-image: url('https://cdn-icons-png.flaticon.com/512/622/622669.png');*/
+    /*background-size: cover;*/
+    background-color:#cccccc80;
+    cursor: pointer;
+    border: transparent;
+    border-radius: 0px 25px 25px 0px;
+}
+.search-box .icon>img{
+    
+    width: 20px;
+    /*height: 20px;*/
+    height:20px;
+    margin: 0px  0px 0px 55px;
+    
+    border: transparent;
+}
+
+.header-button{
+    width:45px;
+    height:45px;
+    /*background-color:#cccccc80;*/
+    display:flex;
+    justify-content: center;
+    border-color: transparent;
+    border-radius: 60px;
+    cursor: pointer;
+    margin:0px 0px 0px 20px;
+
+    
+}
+.header-button > img{
+
+    border-color: transparent;
+}
+#mic{
+    width:45px;
+    height:45px;
+    background-color:#cccccc80;
+    display:flex;
+    justify-content: center;
+
+    border-color:transparent;
+    border-radius: 60px;
+    
+    
+}
+#mic > img{
+    width:60%;
+    height:60%;
+    align-self:center;
+}
+#notice{
+    display:flex;
+    justify-content: center;
+}
+#notice > img{
+
+    align-self:center;
+}
+#user > img{
+    border-radius: 60px;
+}
+#watch{
+    width:1140px;
+    height:1140px;
+    border: 1px solid #999999;
+}
+
+#video{
+    width:70%;
+    height:60%;
+    border: 1px solid #999999;
+    background-size: cover;
+    background-image : url(../../images/시멘틱연습문제_image/thumbnail.png);
+    /*상위폴더를 2번 거슬러 올라가니까 ../가 2번 들어감*/
+}
+
+
+#video > #play-button-center{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+
+    width:150px;
+    height:150px;
+}
+
