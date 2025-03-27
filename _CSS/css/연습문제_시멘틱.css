@@ -275,24 +275,29 @@ main{
  #bq{
     
 }
+
+.thumbs{
+    width:15px;
+    height:15px;
+    border:transparent;
+    margin: 3px 10px 3px 10px;
+
+
+}
 #bq > div{
     width:2px;
     height:100%;
     border:#cccccc80;
     background-color:#cccccc80;
-
+    
 }
 #bq > img:first-of-type{
-    width:15px;
-    height:15px;
-    border:transparent;
-    margin: 3px 20px 3px 10px;
+    
+    margin: 0px 20px 0px 0px;
 }
 #bq > img:last-of-type{
-    width:15px;
-    height:15px;
-    border:transparent;
-    margin: 3px 10px 3px 20px;
+    
+    margin: 0px 0px 0px 20px;
 }
 #video-info > div> #share > p,
 #video-info > div> #others > p{
