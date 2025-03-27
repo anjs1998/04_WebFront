@@ -2,7 +2,7 @@
 
     box-sizing: border-box;
 
-    border:1px solid black;
+    /*border:1px solid black;*/
     
     /*작성할때는 페이지 요소를 원할히 알아보기 위해 써놓고
     개발이 끝낫을때 주석처리*/
@@ -11,20 +11,23 @@
 body{
 
     margin:0;
-
+    
 
 }
 
 main{
 
-    width:1140px;
+    width:100%;
     margin: auto;
+
+    
 }
 
 #header{
     width:100%;
     display:flex;
-    
+    flex-direction : row;
+    margin:10px;
 }
 
 #menu-button{
@@ -50,7 +53,8 @@ main{
     display:flex;
     align-items:center;
     
-    width: 300px;
+    min-width: 310px;
+    max-width: 200%;
     padding : 0px 3px ;
     
     border:2px solid #ccc;
@@ -66,7 +70,7 @@ main{
     outline: none;
     font-size: 16px;
     padding: 5px;
-    
+    background-color: transparent;
 }
 .search-box .icon {
     display: flex;
@@ -92,13 +96,29 @@ main{
     
     border: transparent;
 }
+.button{
+    
+    height:30px;
+    
+    /*background-color:#cccccc80;*/
+    display:flex;
+    flex-direction: row;
+    justify-self: flex-end;
+    border:2px solid #ccc;
+    border-radius: 25px;
+    cursor: pointer;
+    margin:0px 0px 0px 20px;
+    place-items: center center;
+
+}
+
 
 .header-button{
     width:45px;
     height:45px;
     /*background-color:#cccccc80;*/
     display:flex;
-    justify-content: center;
+    align-self: center;
     border-color: transparent;
     border-radius: 60px;
     cursor: pointer;
@@ -138,28 +158,270 @@ main{
 #user > img{
     border-radius: 60px;
 }
+.display-flex{
+    display:flex;
+    width:100%;
+    flex-direction: row;
+    justify-content: flex-start;
+}
 #watch{
-    width:1140px;
+    width:66%;
     height:1140px;
+    margin:20px;
+
     border: 1px solid #999999;
+    border-radius : 5px;
 }
 
 #video{
-    width:70%;
-    height:60%;
+    width:90%;
+    height:386px;
+    margin:20px;
     border: 1px solid #999999;
-    background-size: cover;
+    border-radius:10px;
+    /*background-size: cover;*/
     background-image : url(../../images/시멘틱연습문제_image/thumbnail.png);
+    background-size : contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color:black;
     /*상위폴더를 2번 거슬러 올라가니까 ../가 2번 들어감*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
 }
 
 
 #video > #play-button-center{
     display: flex;
-    align-self: center;
-    justify-self: center;
+    
+    place-self: center center;
 
-    width:150px;
-    height:150px;
+    width:25%;
+    
+    border: 1px solid transparent;
+    cursor:pointer;
 }
 
+#play-button-center > img{
+    width:100%;
+    height:100%;
+    border: 1px solid transparent;
+    border-radius:40px;
+}
+
+
+
+
+#user-thumbnail{
+
+    margin: 0px 20px 0px 0px;
+}
+
+
+#title{
+    margin: 0px 20px 0px 20px;
+
+}
+
+#video-info {
+    display:flex;
+    flex-wrap: nowrap;
+    flex-direction : row;
+}
+
+#video-info > #user-info>*{
+    width:80%;
+    border:transparent;
+}
+
+#video-info > #user-info>*{
+    border:transparent;
+}
+
+#video-info>*{
+    margin: 0px 10px 0px 10px;
+}
+#video-info > #user-info> p4 {
+    font-weight:bold;
+    font-size:12pt;
+
+}
+#video-info > #user-info> p {
+    font-weight:normal;
+    font-size:10pt;
+    color:#636363;
+    width:100%;
+}
+#video-info > #subscribe{
+    width:55px;
+    background-color: black;
+
+
+}
+#video-info > #subscribe> p {
+    font-size: 12px;
+    color:rgb(255, 255, 255);
+    
+}
+
+.end1{
+    background-color:#cccccc80;
+    justify-self:flex-end;
+}
+
+ #bq{
+    
+}
+#bq > div{
+    width:2px;
+    height:100%;
+    border:#cccccc80;
+    background-color:#cccccc80;
+
+}
+#bq > img:first-of-type{
+    width:15px;
+    height:15px;
+    border:transparent;
+    margin: 3px 20px 3px 10px;
+}
+#bq > img:last-of-type{
+    width:15px;
+    height:15px;
+    border:transparent;
+    margin: 3px 10px 3px 20px;
+}
+#video-info > div> #share > p,
+#video-info > div> #others > p{
+    font-size: 12px;
+    color:rgb(0, 0, 0);
+
+}
+.justify-flex-end{
+    width:40%;
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-end;
+}
+
+.box1{
+    width:100%;
+    border:1px solid #ccc;
+    border-radius: 25px;
+
+}
+
+#video-description{
+    width:98%;
+    height:10%;
+    background-color: #cccccc80;
+    margin:10px 5px 10px 5px;
+
+}
+#video-description > b{
+    margin:30px 30px 30px 30px;
+}
+#comments{
+    display:flex
+    height:10%;
+
+}
+#comments>p1{
+    margin:10px 10px 10px 10px;
+    border:transparent;
+}
+.comment{
+    display:flex;
+    margin:30px 30px 30px 30px;
+    border:transparent;
+}
+.comment>*{
+    border:transparent;
+}
+.comment>.header-button{
+    margin:0px 5px 0px 0px;
+}
+
+.comment>div{
+    display:inline;
+    align-items: flex-start;
+}
+.comment>div>*{
+    
+    border:transparent;
+    line-height:20px;
+    margin:0px 0px 0px 0px;
+    
+}
+.comment>div>p4{
+    margin:5px;
+    font-size: 14px;
+    font-weight: bold;
+    color:#363636
+}
+.comment>div>p{
+    margin:5px;
+    font-size: 12px;
+    font-weight: normal;
+    color:#636363;
+}
+.input-comment{
+    border:transparent;
+    
+}
+
+.input-comment>input{
+    text-decoration-line: underline;
+    border:transparent;
+}
+
+#recommended{
+
+    width:max(300px);
+    height:60%;
+    border: 1px solid  #999999;
+    border-radius:5px;
+    margin:20px;
+
+
+}
+
+.another-video{
+    display:flex;
+
+    width:max(279px);
+    height:50px;
+    border: 1px solid  transparent;
+    /*border-radius:5px;*/
+    margin:30px 10px 10px 10px;
+    cursor:pointer;
+}
+.another-video > div {
+    margin:0px 0px 0px 5px;
+    
+
+}
+.another-video > div > .title{
+    margin:3px;
+    font-size: 12px;
+    font-weight: normal;
+    color:black;
+
+}
+.another-video > div >p{
+    margin:2px;
+    font-size: 9px;
+    font-weight: normal;
+    color:#999999;
+
+}
+
+.thumbnail{
+    width:40%;
+    
+    border:transparent;
+    border-radius:10px;
+}
